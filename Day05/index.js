@@ -18,7 +18,7 @@ if(args[2] === '--rename'){
 
 // create new file
 if(args[2] === '--touch'){
-    fs.writeFileSync(args[3], args[4])
+    fs.writeFileSync(args[3], args[4] || "")
 }
 
 // append file create new file if not exist
