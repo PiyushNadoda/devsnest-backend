@@ -1,10 +1,25 @@
+# day1
 /Day1
+
+# day2
 /day2
-/.idea
+
+# day7
 /Day07/node_modules
+
+# day 8
 /Day08/node_modules
+
+# day 9
 /Day09/node_modules
+
+# day 11-12
 /Day11-12/node_modules
-/Day13/node_modules
 
+# day 14
+/Day14-15-16-17/node_modules
+/Day14-15-16-17/.env
+/Day14-15-16-17/public/videos
 
+#idea
+/.idea
