@@ -8,7 +8,7 @@ const {
   serializeUser,
 } = require("../utils/Auth");
 
-// Users Registeration Route
+// Users Registration Route
 router.post("/register-user", async (req, res) => {
   await userRegister(req.body, "user", res);
 });

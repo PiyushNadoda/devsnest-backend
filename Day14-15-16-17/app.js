@@ -7,7 +7,7 @@ const { redisClient, RedisStore, session } = require("./database/redis");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var passport = require('passport')
-require("./database/mongo");
+require("./database/index");
 var app = express();
 
 // view engine setup
@@ -38,6 +38,11 @@ require("./middlewares/passport")(passport);
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/passport", require("./routes/passport"))
+app.use("/products", require("./routes/products"))
+app.use("/stream", require("./routes/stream"))
+app.use("/stream", require("./routes/stream"))
+app.use("/stripe", require('./routes/stripe'))
+
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
@@ -52,7 +57,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("error");
+  res.render("error", {message: "hello", title: "hello"});
 });
 
 module.exports = app;

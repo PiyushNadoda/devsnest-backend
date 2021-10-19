@@ -8,4 +8,5 @@ module.exports = {
     sequelize_host: process.env.SEQUELIZE_HOST,
     sequelize_dialect: process.env.SEQUELIZE_DIALECT,
     SECRET: process.env.SECRET,
+    stripeKey: process.env.STRIPE_KEY,
 }
